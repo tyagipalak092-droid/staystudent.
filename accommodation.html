@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accommodations - StudentStay</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h2>Student<span>Stay</span></h2>
+      <p class="creator-badge"><i class="fa-solid fa-code"></i> Created by <strong>PALAK TYAGI & NIYATI</strong></p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="accommodation.html" class="active">Accommodations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <h1>Available Rooms & PGs</h1>
+    <p>Explore 4-5 verified accommodations in every city!</p>
+  </div>
+
+  <!-- Filter Section -->
+  <section class="filters-container">
+    <div class="filter-group">
+      <label for="city-filter"><i class="fa-solid fa-location-dot"></i> City:</label>
+      <select id="city-filter" onchange="applyFilters()">
+        <option value="All">All Cities</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Meerut">Meerut</option>
+        <option value="Gurugram">Gurugram</option>
+        <option value="Noida">Noida</option>
+        <option value="Dehradun">Dehradun</option>
+        <option value="Pune">Pune</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Lucknow">Lucknow</option>
+        <option value="Jaipur">Jaipur</option>
+        <option value="Muzaffarnagar">Muzaffarnagar</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="type-filter"><i class="fa-solid fa-bed"></i> Room Type:</label>
+      <select id="type-filter" onchange="applyFilters()">
+        <option value="All">All Types</option>
+        <option value="Single Room">Single Room</option>
+        <option value="Shared Room">Shared Room</option>
+        <option value="Studio">Studio</option>
+        <option value="PG">PG</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Accommodations Grid -->
+  <section class="room-listings">
+    <div id="rooms-container" class="rooms-grid">
+      <!-- Dynamic Room Cards Loaded via JS -->
+    </div>
+  </section>
+
+  <!-- Booking / Contact Modal -->
+  <div id="booking-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h3>Book / Contact Property</h3>
+      <p id="modal-room-title" style="font-weight: bold; color: #4a90e2; margin-bottom: 15px;"></p>
+      
+      <form id="modal-form" onsubmit="handleModalSubmit(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="tel" placeholder="Your Phone Number" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="3" placeholder="Any specific requirements..."></textarea>
+        <button type="submit" class="btn-primary">Submit Inquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 StudentStay. All Rights Reserved.</p>
+    <p class="footer-credit">Website Created by <strong>PALAK TYAGI & NIYATI</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

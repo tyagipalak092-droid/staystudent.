@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudentStay - Find Your Ideal Student Accommodation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h2>Student<span>Stay</span></h2>
+      <p class="creator-badge"><i class="fa-solid fa-code"></i> Created by <strong>PALAK TYAGI & NIYATI</strong></p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="accommodation.html">Accommodations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Stylish Hero Section -->
+  <section class="hero stylish-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="badge-pill"><i class="fa-solid fa-sparkles"></i> Verified Student Housing Platform</span>
+      
+      <blockquote class="hero-quote">
+        <i class="fa-solid fa-quote-left"></i> "An investment in knowledge pays the best interest, and a great home gives your dreams the wings to fly." <i class="fa-solid fa-quote-right"></i>
+      </blockquote>
+
+      <h1>Find Your Ideal Room, PG & Studio Near Campus</h1>
+      <p>Explore safe, premium, and budget-friendly stays across top educational cities.</p>
+      
+      <!-- Search Bar -->
+      <div class="search-box glass-search">
+        <div class="input-icon-wrap">
+          <i class="fa-solid fa-location-dot"></i>
+          <select id="home-city-select">
+            <option value="">Select Your Target City</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Meerut">Meerut</option>
+            <option value="Gurugram">Gurugram</option>
+            <option value="Noida">Noida</option>
+            <option value="Dehradun">Dehradun</option>
+            <option value="Pune">Pune</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Muzaffarnagar">Muzaffarnagar</option>
+          </select>
+        </div>
+        <button onclick="searchCity()"><i class="fa-solid fa-magnifying-glass"></i> Explore Rooms</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Stats Bar -->
+  <section class="stats-bar">
+    <div class="stat-item">
+      <i class="fa-solid fa-city"></i>
+      <div>
+        <h3>10+</h3>
+        <p>Top Educational Cities</p>
+      </div>
+    </div>
+    <div class="stat-item">
+      <i class="fa-solid fa-bed"></i>
+      <div>
+        <h3>40+</h3>
+        <p>Verified Stays</p>
+      </div>
+    </div>
+    <div class="stat-item">
+      <i class="fa-solid fa-shield-halved"></i>
+      <div>
+        <h3>100%</h3>
+        <p>Safe & Student Friendly</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Creator Banner -->
+  <section class="creator-banner">
+    <div class="creator-card">
+      <i class="fa-solid fa-graduation-cap icon"></i>
+      <h3>Crafted For Students, By Innovators</h3>
+      <p>Designed with ❤ by <strong>PALAK TYAGI & NIYATI</strong> to make student living hassle-free.</p>
+    </div>
+  </section>
+
+  <!-- Cities Grid -->
+  <section class="featured-cities">
+    <h2>Explore Stays by City</h2>
+    <p class="section-sub">Choose your city to discover verified single rooms, shared stays, studios & PGs.</p>
+    <div class="city-grid">
+      <div class="city-card" onclick="filterByCity('Delhi')"><i class="fa-solid fa-building-columns"></i><h3>Delhi</h3></div>
+      <div class="city-card" onclick="filterByCity('Meerut')"><i class="fa-solid fa-book-open"></i><h3>Meerut</h3></div>
+      <div class="city-card" onclick="filterByCity('Gurugram')"><i class="fa-solid fa-briefcase"></i><h3>Gurugram</h3></div>
+      <div class="city-card" onclick="filterByCity('Noida')"><i class="fa-solid fa-laptop-code"></i><h3>Noida</h3></div>
+      <div class="city-card" onclick="filterByCity('Dehradun')"><i class="fa-solid fa-mountain-sun"></i><h3>Dehradun</h3></div>
+      <div class="city-card" onclick="filterByCity('Pune')"><i class="fa-solid fa-graduation-cap"></i><h3>Pune</h3></div>
+      <div class="city-card" onclick="filterByCity('Punjab')"><i class="fa-solid fa-landmark"></i><h3>Punjab</h3></div>
+      <div class="city-card" onclick="filterByCity('Lucknow')"><i class="fa-solid fa-hotel"></i><h3>Lucknow</h3></div>
+      <div class="city-card" onclick="filterByCity('Jaipur')"><i class="fa-solid fa-chess-rook"></i><h3>Jaipur</h3></div>
+      <div class="city-card" onclick="filterByCity('Muzaffarnagar')"><i class="fa-solid fa-house-chimney"></i><h3>Muzaffarnagar</h3></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 StudentStay. All Rights Reserved.</p>
+    <p class="footer-credit">Website Created by <strong>PALAK TYAGI & NIYATI</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
